@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/*
+ 
+			_                
+		 / \   _ __  _ __  
+		/ _ \ | '_ \| '_ \ 
+	 / ___ \| |_) | |_) |
+	/_/   \_\ .__/| .__/ 
+					|_|   |_|    
+ 
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/*=============================================
+=            estilos principales            =
+=============================================*/
+body{
+	font-family: 'Open Sans';
+	background-color: rgb(50, 50, 50);
+	color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4{
+	margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+/*=============================================
+=            calculator            =
+=============================================*/
+#calculator-container{
+	display: flex;
+	background-color: rgb(255, 134, 28);
+	padding: 4%;
+	margin-top: 10%;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/*----------  number input  ----------*/
+
+#input-value-container{
+	width: 12%;
 }
 
-.App-link {
-  color: #61dafb;
+#input-value-container input{
+	width: 100%;
+	background-color: rgb(50, 50, 50);
+	font-size: .9rem;
+	padding: .35rem 0;
+	color: white;
+	border: none;
+	border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/*----------  base pickers  ----------*/
+
+.base_picking{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.base_picking select{
+	font-family: 'Open Sans';
+	width: 100%;
+	background: rgb(50, 50, 50);
+	color: white;
+	border: none;
+	border-radius: 2px;
+}
+
+.base_picking h4{
+	font-size: .8rem;
+	margin-top: 10%;
+}
+
+
+/*----------  resultado  ----------*/
+
+#result-container{
+	min-height: 50vh;
+	max-height: 50vh;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#result-container h1{
+	width: 90%;
+	overflow-wrap: break-word;
+}
+
+
+/*----------  imagenes  ----------*/
+
+#codeimgs-container{
+	width: 100%;
+	border-top: calc(3px - .05em) solid rgba(150, 150, 150, .6);
+}
+
+.codeimg-container img{
+	width: 100%;
 }
